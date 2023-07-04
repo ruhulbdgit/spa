@@ -21,6 +21,11 @@
      width: 20%;
      height: 400px;
      background-color: aqua;
+
+ }
+
+ .sidebar>h2 {
+     margin-left: 20px;
  }
 
  .content {
@@ -39,4 +44,8 @@
 
  a {
      text-decoration: none;
+ }
+
+ h2 {
+     margin-left: 20px;
  }
