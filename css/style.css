@@ -24,7 +24,7 @@
 
  }
 
- .sidebar>h2 {
+ .sidebar h2 {
      margin-left: 20px;
  }
 
@@ -44,8 +44,4 @@
 
  a {
      text-decoration: none;
- }
-
- h2 {
-     margin-left: 20px;
  }
