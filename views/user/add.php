@@ -2,37 +2,26 @@
 first name ,last name , email , password  , regiser . 
 */ 
 <?php
-// define variables and set to empty values
-$name = $email = $comment = "";
+    <form action="process_registration.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-}
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="registration_date">Registration Date:</label>
+        <input type="date" id="registration_date" name="registration_date" required><br>
+
+        <input type="submit" value="Register">
+    </form>
 ?>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Frist Name: <input type="text" name="name">
-  <br><br>
- Last Name: <input type="text" name="name">
-  <br><br>
-  E-mail: <input type="text" name="email">
-  <br><br>
-   Password: <input type="specialchars" name="password">
-  <br><br>
- <input type="submit" name="submit" value="Registerd">  
-</form>
 
-<?php
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-?>
+
+
 
