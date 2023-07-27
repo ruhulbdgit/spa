@@ -35,6 +35,5 @@ echo $name;
 echo "<br>";
 echo $email;
 echo "<br>";
-echo "<br>";
 ?>
 
