@@ -11,8 +11,9 @@ function loadView($viewPath='')
     $viewName = str_replace('.', '/', $viewPath);
    
     // check if view path exists 
-     if (!empty($viewName) && !empty($viewPath)  && file_exists(RUHUL_SPA_PATH . 'views/' . $viewPath . '.php')) {
+     if (!empty($viewName) && !empty($viewPath)  && file_exists(RUHUL_SPA_PATH . 'views/' . $viewName . '.php')) {
         require_once RUHUL_SPA_PATH . 'views/' . $viewName . '.php';
+        return true;
     }
 
     // get page from query string 
@@ -23,11 +24,12 @@ function loadView($viewPath='')
         // check if file exists
         if (file_exists(RUHUL_SPA_PATH . 'views/' . $_page . '/' . $_todo . '.php')) {
            
+
             require_once RUHUL_SPA_PATH . 'views/' . $_page . '/' . $_todo . '.php';
         } 
     }
+    return false;
 
-    require_once RUHUL_SPA_PATH . 'views/404.php';
 }
 
 
@@ -36,8 +38,9 @@ function loadView($viewPath='')
  * path will proceed with dot notation
  * @since 1.0.0
  */
-function loadMainView()
+function loadMainView($page)
 {
+   
     require_once RUHUL_SPA_PATH . 'views/main.php';
 }
 

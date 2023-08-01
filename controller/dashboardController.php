@@ -4,6 +4,7 @@ class dashboardController
 {
     public function index()
     {
-        loadView('main');
+       
+        loadMainView("dashboard.index");
     }
 }
