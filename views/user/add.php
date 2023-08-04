@@ -1,7 +1,4 @@
-/*This is user add view
-first name ,last name , email , password  , regiser . 
-*/ 
-<?php
+
     <form action="process_registration.php" method="post">
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" required><br>
@@ -20,7 +17,7 @@ first name ,last name , email , password  , regiser .
 
         <input type="submit" value="Register">
     </form>
-?>
+
 
 
 
