@@ -4,6 +4,6 @@
   <a href="?page=user&todo=edit">
       <h2>Edit user</h2>
   </a>
-  <a href="">
+  <a href="?page=user&todo=list">
       <h2>list User</h2>
   </a>

@@ -27,10 +27,22 @@ function loadControllers()
     }
 }
 
+/**
+ * Load models file 
+ */
+function loadModels()
+{
+    $files = glob('models/*.php');
+    foreach ($files as $file) {
+        require_once $file;
+    }
+}
+
 // bootstrap the application
 function bootstrap(){
     autoLoad();
     loadControllers();
+    loadModels();
     // load main view file 
    // loadView('main');
    $page = _get('page');

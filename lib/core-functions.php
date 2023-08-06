@@ -52,3 +52,11 @@ function _get($key){
     $value = isset($_GET[$key]) ? $_GET[$key] : null;
     return $value;
 }
+
+/**
+ * This function will return value from global $_POST variable
+ */
+function _post($key){
+    $value = isset($_POST[$key]) ? $_POST[$key] : null;
+    return $value;
+}
