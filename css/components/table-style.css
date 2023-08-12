@@ -1,0 +1,11 @@
+
+.spa__list--view {
+  display: table;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.spa__list--view tr {
+  display: table-row;
+  border: 1px solid #ccc;
+}

@@ -33,11 +33,11 @@ class userController
      public function list()
      {
             // create users model object 
-           // $userModel = new users();
+            $userModel = new users();
             // call list method
-            //$users = $userModel->list();
+            $users = $userModel->list();
             // load view file 
-            loadMainView("user.list");
+            loadMainView("user.list",$users);
      }
 
 }
