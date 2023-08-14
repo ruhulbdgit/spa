@@ -2,13 +2,13 @@
 
     <thead>
         <tr>
-            <th>Id</th>
-            <th>First name</th>
-            <th>Last Name</th>
-            <th>E-mail</th>
-            <th>Register Date</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th>Id:</th>
+            <th>First name:</th>
+            <th>Last Name:</th>
+            <th>E-mail:</th>
+            <th>Register Date:</th>
+            <th>Status:</th>
+            <th>Actions:</th>
         </tr>
     </thead>
 
