@@ -1,4 +1,4 @@
-<form action="" method="post">
+<form action="list.php" method="post">
     <label for="first_name">First Name:</label>
     <input type="text" class="nameInput" id="first_name" name="firstName" required><br>
 

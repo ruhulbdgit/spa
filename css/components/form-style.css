@@ -1,0 +1,56 @@
+/* Apply some basic styles to the form and its elements */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Apply some styling for form validation messages */
+input:invalid {
+    border-color: #ff0000;
+}
+
+input:invalid+span::before {
+    content: 'Invalid input. ';
+    color: #ff0000;
+}
+
+/* Customize styles for the form elements if needed */
+.nameInput {
+    /* Add specific styles for the first name input if necessary */
+}
+
+.emailInput {
+    /* Add specific styles for the email input if necessary */
+}
+
+/* Add more CSS rules here as per your requirements */
