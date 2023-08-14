@@ -5,7 +5,7 @@
  * path will proceed with dot notation
  * @since 1.0.0
  */
-function loadView($viewPath='')
+function loadView($viewPath='',$data=array())
 {
     // if _page and _todo is not set then load main view
     $viewName = str_replace('.', '/', $viewPath);
@@ -38,7 +38,7 @@ function loadView($viewPath='')
  * path will proceed with dot notation
  * @since 1.0.0
  */
-function loadMainView($page)
+function loadMainView($page,$data=array())
 {
    
     require_once RUHUL_SPA_PATH . 'views/main.php';

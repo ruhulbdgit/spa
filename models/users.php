@@ -19,9 +19,30 @@ class users {
         $result = mysqli_query(dbconnect(), $sql);
         // get last inserted id
         $lastInsertedId = mysqli_insert_id(dbconnect());
-        echo $lastInsertedId;
+      
         // return last insert id 
         return $lastInsertedId;
+    }
+    /**
+     * List user method
+     */
+    public function list() {
+        $sql = "SELECT * FROM spa_users";
+        $result = mysqli_query(dbconnect(), $sql);
+        $users = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $users[] = $row;
+        }
+        return $users;
+    }
+    /**
+     * Select a single users from database 
+     */
+    public function select($id) {
+        $sql = "SELECT * FROM spa_users WHERE id=$id";
+        $result = mysqli_query(dbconnect(), $sql);
+        $user = mysqli_fetch_assoc($result);
+        return $user;
     }
     
 }

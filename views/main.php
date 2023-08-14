@@ -13,7 +13,7 @@
           <?php loadView('partials.sidebar'); ?>
         </div>
         <div class="content">
-            <?php loadView($page); ?>
+            <?php loadView($page,$data); ?>
         </div>
     </div>
     <div class="footer">
