@@ -1,11 +1,11 @@
-
 .spa__list--view {
-  display: table;
+  display: flex;
   border: 1px solid #ccc;
   width: 100%;
+  justify-content: space-between;
 }
 
 .spa__list--view tr {
   display: table-row;
-  border: 1px solid #ccc;
+  border: 1px solid #e01919;
 }
