@@ -1,5 +1,5 @@
 <h2>Add user</h2>
-<form action="list.php" method="post">
+<form action="" method="post">
     <label for="first_name">First Name:</label>
     <input type="text" class="nameInput" id="first_name" name="firstName" required><br>
 

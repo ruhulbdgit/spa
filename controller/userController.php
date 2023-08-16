@@ -8,11 +8,13 @@ class userController
           // count $_post variable to see submitted data  
           if (count($_POST) > 0) {
                // create users model object 
+
                $userModel = new users();
                // call add method
                $lastInsertedId = $userModel->add();
+
                // check if last inserted id is greater than 0
-               if ($lastInsertedId > 0) {
+               if ($lastInsertedId) {
                     // redirect to user list page
                     header("Location: ?page=user&todo=list");
                }
