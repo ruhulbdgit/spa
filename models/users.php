@@ -48,4 +48,30 @@ class users
         $user = mysqli_fetch_assoc($result);
         return $user;
     }
+
+    /**
+     * get user by id
+     * @param int $id
+     */
+    public function getById($id)
+    {
+        $sql = "SELECT * FROM spa_users WHERE id=$id";
+        $result = mysqli_query(dbconnect(), $sql);
+        $user = mysqli_fetch_assoc($result);
+        return $user;
+    }
+    /**
+     * update user method
+     */
+    public function update()
+    {
+        $id = _post("id");
+        $firstName = _post("firstName");
+        $lastName = _post("lastName");
+        $email = _post("email");
+        $password = _post("password");
+        $sql = "UPDATE spa_users SET firstName='$firstName', lastName='$lastName', email='$email', password='$password' WHERE id=$id";
+        $result = mysqli_query(dbconnect(), $sql);
+        return $result;
+    }
 }
