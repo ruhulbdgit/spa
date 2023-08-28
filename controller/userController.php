@@ -33,11 +33,11 @@ class userController
 
           $id = _get("id");
           // get user data by id
-          if(count($_POST) > 0){
+          if (count($_POST) > 0) {
                $this->userModel->update();
                header("Location: ?page=user&todo=list");
           }
-          
+
           $user = $this->userModel->getById($id);
 
           loadMainView("user.edit", $user);
@@ -53,5 +53,9 @@ class userController
           $users = $userModel->list();
           // load view file 
           loadMainView("user.list", $users);
+     }
+     public function delete()
+     {
+          loadMainView("index.php");
      }
 }
