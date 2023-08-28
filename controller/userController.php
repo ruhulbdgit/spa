@@ -56,6 +56,6 @@ class userController
      }
      public function delete()
      {
-          loadMainView("index.php");
+          loadMainView("");
      }
 }
