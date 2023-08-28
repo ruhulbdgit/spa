@@ -40,4 +40,4 @@ class userController
           // load view file 
           loadMainView("user.list", $users);
      }
-};
+}
