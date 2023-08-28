@@ -55,6 +55,7 @@ class userController
           loadMainView("user.list", $users);
      }
      public function delete()
+
      {
           loadMainView("");
      }
