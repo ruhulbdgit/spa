@@ -83,4 +83,10 @@ class users
         $result = mysqli_query(dbconnect(), $sql);
         return $result;
     }
+    public function add_pages($id)
+    {
+        $sql = "ADDPAGES FROM add_pages WHERE id=$id";
+        $result = mysqli_query(dbconnect(), $sql);
+        return $result;
+    }
 }

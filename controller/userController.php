@@ -58,9 +58,23 @@ class userController
      {
           $id = _get("id");
           // check if id is not empty
-          if(!empty($id)){
+          if (!empty($id)) {
                // call delete method
                $deleted = $this->userModel->delete($id);
+               // redirect to user list page
+               header("Location: ?page=user&todo=list");
+          } else {
+               // redirect to user list page
+               header("Location: ?page=user&todo=list");
+          }
+     }
+     public function add_pages()
+     {
+          $id = _get("id");
+          // check if id is not empty
+          if (!empty($id)) {
+               // call delete method
+               $aded = $this->userModel->add_pages($id);
                // redirect to user list page
                header("Location: ?page=user&todo=list");
           } else {

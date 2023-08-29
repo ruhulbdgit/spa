@@ -7,5 +7,5 @@ if (!defined('RUHUL_SPA_PATH')) {
 // define database connection constants
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'test');
-define('DB_NAME', 'ruhul_spa');
+define('DB_PASS', '');
+define('DB_NAME', 'ruhul_spa', 'add_pages');
