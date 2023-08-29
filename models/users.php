@@ -74,4 +74,13 @@ class users
         $result = mysqli_query(dbconnect(), $sql);
         return $result;
     }
+    /**
+     * delete user methood 
+     */
+    public function delete($id)
+    {
+        $sql = "DELETE FROM spa_users WHERE id=$id";
+        $result = mysqli_query(dbconnect(), $sql);
+        return $result;
+    }
 }

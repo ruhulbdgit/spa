@@ -55,8 +55,17 @@ class userController
           loadMainView("user.list", $users);
      }
      public function delete()
-
      {
-          loadMainView("");
+          $id = _get("id");
+          // check if id is not empty
+          if(!empty($id)){
+               // call delete method
+               $deleted = $this->userModel->delete($id);
+               // redirect to user list page
+               header("Location: ?page=user&todo=list");
+          } else {
+               // redirect to user list page
+               header("Location: ?page=user&todo=list");
+          }
      }
 }
